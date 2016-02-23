@@ -23,7 +23,7 @@ var server = http.createServer(function(req, res) {
   console.log('Starting Proxy request');
 
   var options = {
-    'url': 'https://google.com',
+    'url': destination,
     'proxy': proxy
   }
 

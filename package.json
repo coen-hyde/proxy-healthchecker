@@ -1,6 +1,6 @@
 {
   "name": "proxy-healthchecker",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A server that responds 200 if it can successfully make a proxy request though a proxy",
   "main": "index.js",
   "bin": "index.js",
