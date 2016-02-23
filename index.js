@@ -10,7 +10,7 @@ var destination = process.env.DESTINATION
 var responding_server_port = health_check_port+1;
 
 if (!proxy) {
-  clogger.error('PROXY env variable is required');
+  logger.error('PROXY env variable is required');
   process.exit(1);
 }
 
@@ -36,7 +36,7 @@ var server = http.createServer(function(req, res) {
       return res.end();
     }
 
-    ogger.info('Proxy request succeeded');
+    logger.info('Proxy request succeeded');
     res.writeHead(200, { "Content-Type": "text/html" });
     res.end();
   });
